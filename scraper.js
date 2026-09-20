@@ -4,7 +4,7 @@ const fs = require('fs');
 
 const KARANIME = 'https://karanime.com/wp-json/wp/v2/animes';
 const ANILIST = 'https://graphql.anilist.co';
-const MAX_PAGES = 6;          // 6 halaman × 100 = max 600 anime
+const MAX_PAGES = 40;         // max 4000 anime (baca total halaman asli dari API)
 const KARANIME_DELAY = 1000;  // delay antar halaman (hormatin server)
 const AL_DELAY = 420;         // delay antar request AniList (hindari rate limit)
 const AL_MAX_ENRICH = 200;     // max item yang di-enrich per jalan
@@ -69,10 +69,16 @@ function parseItem(item) {
 
 async function fetchKaranime() {
     const all = [];
-    for (let page = 1; page <= MAX_PAGES; page++) {
-        process.stdout.write(`Scraping halaman ${page}...\n`);
+    let totalPages = MAX_PAGES;
+    for (let page = 1; page <= totalPages; page++) {
+        process.stdout.write(`Scraping halaman ${page}/${totalPages}...\n`);
         const res = await fetch(`${KARANIME}?per_page=100&page=${page}&orderby=modified&order=desc&_fields=id,date,modified,title,meta_box,excerpt,content`);
         if (!res.ok) { console.log('Halaman', page, 'gagal:', res.status); break; }
+        const tp = parseInt(res.headers.get('X-WP-TotalPages')) || 0;
+        if (tp > 0 && tp !== totalPages) {
+            totalPages = Math.min(tp, MAX_PAGES);
+            console.log('Total halaman karanime:', tp, '→ scrape sampai halaman', totalPages);
+        }
         const data = await res.json();
         if (!Array.isArray(data) || data.length === 0) break;
         all.push(...data.map(parseItem));
@@ -195,3 +201,4 @@ async function enrichAniList(list, meta) {
     fs.writeFileSync('meta.json', JSON.stringify(meta));
     console.log('Selesai! catalog.json =', (fs.statSync('catalog.json').size / 1024).toFixed(1), 'KB |', list.length, 'anime');
 })().catch(e => { console.error('FATAL:', e); process.exit(1); });
+    
