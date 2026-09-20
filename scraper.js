@@ -7,7 +7,7 @@ const ANILIST = 'https://graphql.anilist.co';
 const MAX_PAGES = 6;          // 6 halaman × 100 = max 600 anime
 const KARANIME_DELAY = 1000;  // delay antar halaman (hormatin server)
 const AL_DELAY = 420;         // delay antar request AniList (hindari rate limit)
-const AL_MAX_ENRICH = 60;     // max item yang di-enrich per jalan
+const AL_MAX_ENRICH = 200;     // max item yang di-enrich per jalan
 
 function decodeEntities(t) {
     return String(t || '')
@@ -100,18 +100,46 @@ async function alQuery(q, vars) {
     return j.data;
 }
 
-function bestMatch(title, media) {
-    const words = normalizeTitle(title).split(' ').filter(Boolean);
+function cleanSearchTitle(t) {
+    // buang penanda season/part/cour biar search-nya kena ("...Season 2" -> "...")
+    return String(t || '')
+        .replace(/\b\d+(?:th|nd|rd|st)\s+season\b/gi, ' ')
+        .replace(/\b(?:season|part|cour)\s*\d+\b/gi, ' ')
+        .replace(/\bs\d+\b/gi, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+}
+
+function extractSeasonNum(t) {
+    const s = String(t || '');
+    let m = s.match(/\bseason\s*(\d+)\b/i) ||
+            s.match(/(\d+)(?:th|nd|rd|st)\s+season\b/i) ||
+            s.match(/\bpart\s*(\d+)\b/i) ||
+            s.match(/\bcour\s*(\d+)\b/i) ||
+            s.match(/\bs(\d+)\b/i);
+    return m ? parseInt(m[1], 10) : null;
+}
+
+function pickBest(baseTitle, wantSeason, media) {
+    const words = normalizeTitle(baseTitle).split(' ').filter(Boolean);
     if (!words.length) return media[0] || null;
     let best = null, bestScore = 0;
     for (const m of media) {
-        const mt = normalizeTitle(m.title?.english || m.title?.romaji || m.title?.native || '');
+        const mtFull = m.title?.english || m.title?.romaji || m.title?.native || '';
+        const mt = normalizeTitle(mtFull);
         let hits = 0;
         for (const w of words) if (mt.includes(w)) hits++;
-        const score = hits / words.length;
+        let score = hits / words.length;
+        const mSeason = extractSeasonNum(mtFull);
+        if (wantSeason && mSeason === wantSeason) score += 0.5;              // season cocok → prioritas
+        else if (wantSeason && mSeason && mSeason !== wantSeason) score -= 0.3; // beda season → penalti
         if (score > bestScore) { bestScore = score; best = m; }
     }
     return (best && bestScore >= 0.6) ? best : null;
+}
+
+function bestMatch(title, media) {
+    return pickBest(cleanSearchTitle(title), extractSeasonNum(title), media);
 }
 
 function loadMeta() {
@@ -132,7 +160,7 @@ async function enrichAniList(list, meta) {
     console.log('Enrich AniList:', targets.length, 'item');
     for (const a of targets) {
         try {
-            const q = `query($s:String){Page(page:1,perPage:3){media(type:ANIME,search:$s,isAdult:false){id title{romaji english native} genres seasonYear startDate{year}}}}`;
+            const q = `query($s:String){Page(page:1,perPage:5){media(type:ANIME,search:$s,isAdult:false){id title{romaji english native} genres seasonYear startDate{year}}}}`;
             const d = await alQuery(q, { s: a.title });
             const media = d?.Page?.media || [];
             const best = bestMatch(a.title, media);
