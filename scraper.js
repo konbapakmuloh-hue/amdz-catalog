@@ -1,6 +1,7 @@
 // amdz-catalog scraper — jalan di GitHub Actions tiap 6 jam
 // Scrape karanime.com → enrich tahun & genre dari AniList → tulis catalog.json + meta.json
 const fs = require('fs');
+const { execSync } = require('child_process');
 
 const KARANIME = 'https://karanime.com/wp-json/wp/v2/animes';
 const ANILIST = 'https://graphql.anilist.co';
@@ -140,12 +141,17 @@ function pickBest(baseTitle, wantSeason, media) {
     if (!words.length) return media[0] || null;
     let best = null, bestScore = 0;
     for (const m of media) {
-        const mtFull = m.title?.english || m.title?.romaji || m.title?.native || '';
-        const mt = normalizeTitle(mtFull);
-        let hits = 0;
-        for (const w of words) if (mt.includes(w)) hits++;
-        let score = hits / words.length;
-        const mSeason = extractSeasonNum(mtFull);
+        // CEK SEMUA JUDUL (english/romaji/native), ambil skor tertinggi
+        const titles = [m.title?.english, m.title?.romaji, m.title?.native].filter(Boolean);
+        let base = 0;
+        for (const t of titles) {
+            const mt = normalizeTitle(t);
+            let hits = 0;
+            for (const w of words) if (mt.includes(w)) hits++;
+            base = Math.max(base, hits / words.length);
+        }
+        let score = base;
+        const mSeason = extractSeasonNum(titles.join(' '));
         if (wantSeason && mSeason === wantSeason) score += 0.5;              // season cocok → prioritas
         else if (wantSeason && mSeason && mSeason !== wantSeason) score -= 0.3; // beda season → penalti
         if (score > bestScore) { bestScore = score; best = m; }
@@ -170,9 +176,24 @@ function applyMeta(list, meta) {
     }
 }
 
+function checkpoint(list, meta, n) {
+    try {
+        fs.writeFileSync('catalog.json', JSON.stringify(list));
+        fs.writeFileSync('meta.json', JSON.stringify(meta));
+        try {
+            execSync('git config user.name "amdz-bot" && git config user.email "bot@users.noreply.github.com"');
+            execSync('git add catalog.json meta.json');
+            const out = execSync('git commit -m "chore: checkpoint enrich [skip ci]" 2>&1 || true').toString();
+            if (!out.includes('nothing to commit')) execSync('git push 2>&1 || true');
+        } catch (e) {}
+        console.log('💾 checkpoint: ' + n + ' item tersimpan');
+    } catch (e) { console.log('checkpoint gagal:', e.message); }
+}
+
 async function enrichAniList(list, meta) {
     const targets = list.filter(a => !a.year || isGenericGenres(a.genres)).slice(0, AL_MAX_ENRICH);
     console.log('Enrich AniList:', targets.length, 'item');
+    let processed = 0;
     for (const a of targets) {
         try {
             const q = `query($s:String){Page(page:1,perPage:5){media(type:ANIME,search:$s,isAdult:false){id title{romaji english} genres seasonYear startDate{year}}}}`;
@@ -190,6 +211,8 @@ async function enrichAniList(list, meta) {
             console.error('Enrich gagal:', a.title, '-', e.message);
         }
         await new Promise(r => setTimeout(r, AL_DELAY + Math.random() * 1000)); // +jitter 0-1s
+        processed++;
+        if (processed % 50 === 0) checkpoint(list, meta, processed);
     }
 }
 
