@@ -31,6 +31,13 @@ function normalizeTitle(s) {
         .replace(/\s+/g, ' ').trim();
 }
 
+function alStatusMap(st) {
+    st = String(st || '').toUpperCase();
+    if (st === 'RELEASING') return 'ongoing';
+    if (st === 'FINISHED') return 'completed';
+    return '';
+}
+
 function isGenericGenres(g) {
     return !g || g.length === 0 || g.every(x => /^(anime|sub indo)$/i.test(String(x).trim()));
 }
@@ -173,6 +180,7 @@ function applyMeta(list, meta) {
         if (!m) continue;
         if (m.y && !a.year) a.year = m.y;
         if (m.g && m.g.length && isGenericGenres(a.genres)) a.genres = m.g;
+        if (m.s && !a._status) a._status = m.s;
     }
 }
 
@@ -196,16 +204,18 @@ async function enrichAniList(list, meta) {
     let processed = 0;
     for (const a of targets) {
         try {
-            const q = `query($s:String){Page(page:1,perPage:5){media(type:ANIME,search:$s,isAdult:false){id title{romaji english} genres seasonYear startDate{year}}}}`;
+            const q = `query($s:String){Page(page:1,perPage:5){media(type:ANIME,search:$s,isAdult:false){id title{romaji english} genres seasonYear startDate{year} status}}}`;
             const d = await alQuery(q, { s: a.title });
             const media = d?.Page?.media || [];
             const best = bestMatch(a.title, media);
             if (best) {
                 const y = sanitizeYear(String(best.seasonYear || best.startDate?.year || ''));
                 const g = (best.genres || []).filter(Boolean).slice(0, 4);
+                const st = alStatusMap(best.status);
                 meta[a.id] = meta[a.id] || {};
                 if (y && !a.year) { a.year = y; meta[a.id].y = y; }
                 if (g.length && isGenericGenres(a.genres)) { a.genres = g; meta[a.id].g = g; }
+                if (st && !a._status) { a._status = st; meta[a.id].s = st; }
             }
         } catch (e) {
             console.error('Enrich gagal:', a.title, '-', e.message);
