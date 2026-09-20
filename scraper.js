@@ -6,8 +6,8 @@ const KARANIME = 'https://karanime.com/wp-json/wp/v2/animes';
 const ANILIST = 'https://graphql.anilist.co';
 const MAX_PAGES = 40;         // max 4000 anime (baca total halaman asli dari API)
 const KARANIME_DELAY = 1000;  // delay antar halaman (hormatin server)
-const AL_DELAY = 420;         // delay antar request AniList (hindari rate limit)
-const AL_MAX_ENRICH = 200;     // max item yang di-enrich per jalan
+const AL_DELAY = 750;         // delay antar request AniList (batas aman: 90 req/menit)
+const AL_MAX_ENRICH = 3000;    // max item per jalan (sekali jalan habis semua)
 
 function decodeEntities(t) {
     return String(t || '')
@@ -201,4 +201,3 @@ async function enrichAniList(list, meta) {
     fs.writeFileSync('meta.json', JSON.stringify(meta));
     console.log('Selesai! catalog.json =', (fs.statSync('catalog.json').size / 1024).toFixed(1), 'KB |', list.length, 'anime');
 })().catch(e => { console.error('FATAL:', e); process.exit(1); });
-    
