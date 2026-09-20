@@ -186,8 +186,8 @@ function applyMeta(list, meta) {
 
 function checkpoint(list, meta, n) {
     try {
-        fs.writeFileSync('catalog.json', JSON.stringify(list));
-        fs.writeFileSync('meta.json', JSON.stringify(meta));
+        fs.writeFileSync('catalog.json', JSON.stringify(list, null, 2));
+        fs.writeFileSync('meta.json', JSON.stringify(meta, null, 2));
         try {
             execSync('git config user.name "amdz-bot" && git config user.email "bot@users.noreply.github.com"');
             execSync('git add catalog.json meta.json');
@@ -239,7 +239,7 @@ async function enrichAniList(list, meta) {
     await enrichAniList(list, meta);
 
     list.sort((a, b) => (b.latestUpdate || b.id) - (a.latestUpdate || a.id));
-    fs.writeFileSync('catalog.json', JSON.stringify(list));
-    fs.writeFileSync('meta.json', JSON.stringify(meta));
+    fs.writeFileSync('catalog.json', JSON.stringify(list, null, 2));
+    fs.writeFileSync('meta.json', JSON.stringify(meta, null, 2));
     console.log('Selesai! catalog.json =', (fs.statSync('catalog.json').size / 1024).toFixed(1), 'KB |', list.length, 'anime');
 })().catch(e => { console.error('FATAL:', e); process.exit(1); });
