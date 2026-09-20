@@ -6,7 +6,7 @@ const KARANIME = 'https://karanime.com/wp-json/wp/v2/animes';
 const ANILIST = 'https://graphql.anilist.co';
 const MAX_PAGES = 40;         // max 4000 anime (baca total halaman asli dari API)
 const KARANIME_DELAY = 1000;  // delay antar halaman (hormatin server)
-const AL_DELAY = 750;         // delay antar request AniList (batas aman: 90 req/menit)
+const AL_DELAY = 2000;        // delay antar item (IP GitHub rame, amanin aja)
 const AL_MAX_ENRICH = 3000;    // max item per jalan (sekali jalan habis semua)
 
 function decodeEntities(t) {
@@ -94,16 +94,25 @@ async function fetchKaranime() {
     });
 }
 
-async function alQuery(q, vars) {
-    const res = await fetch(ANILIST, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify({ query: q, variables: vars || {} })
-    });
-    if (!res.ok) throw new Error('HTTP ' + res.status);
-    const j = await res.json();
-    if (j.errors) throw new Error(j.errors[0].message);
-    return j.data;
+async function alQuery(q, vars, retries = 3) {
+    for (let i = 0; i < retries; i++) {
+        const res = await fetch(ANILIST, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: JSON.stringify({ query: q, variables: vars || {} })
+        });
+        if (res.status === 429) {
+            const wait = 20000 + Math.random() * 15000; // 20-35 detik
+            console.log('  ⚠️ 429 rate limit → tunggu ' + Math.round(wait / 1000) + 's (retry ' + (i + 1) + '/' + retries + ')');
+            await new Promise(r => setTimeout(r, wait));
+            continue;
+        }
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        const j = await res.json();
+        if (j.errors) throw new Error(j.errors[0].message);
+        return j.data;
+    }
+    throw new Error('HTTP 429 terus-terusan, skip dulu');
 }
 
 function cleanSearchTitle(t) {
@@ -166,7 +175,7 @@ async function enrichAniList(list, meta) {
     console.log('Enrich AniList:', targets.length, 'item');
     for (const a of targets) {
         try {
-            const q = `query($s:String){Page(page:1,perPage:5){media(type:ANIME,search:$s,isAdult:false){id title{romaji english native} genres seasonYear startDate{year}}}}`;
+            const q = `query($s:String){Page(page:1,perPage:5){media(type:ANIME,search:$s,isAdult:false){id title{romaji english} genres seasonYear startDate{year}}}}`;
             const d = await alQuery(q, { s: a.title });
             const media = d?.Page?.media || [];
             const best = bestMatch(a.title, media);
@@ -180,7 +189,7 @@ async function enrichAniList(list, meta) {
         } catch (e) {
             console.error('Enrich gagal:', a.title, '-', e.message);
         }
-        await new Promise(r => setTimeout(r, AL_DELAY));
+        await new Promise(r => setTimeout(r, AL_DELAY + Math.random() * 1000)); // +jitter 0-1s
     }
 }
 
