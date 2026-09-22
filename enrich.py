@@ -20,7 +20,7 @@ def al_query(query, variables, retries=4):
 
 def normalize(t):
     t = t.lower()
-    t = re.sub(r'[\u201c\u201d"\'` + "'" + r`:;,.!?()\[\]{}~\-_/\\|@#$%^&*+=<>]', ' ', t)
+    t = re.sub(r'[“”"\`:;,.!?()\[\]{}~\-_/\\|@#$%^&*+=<>]', ' ', t)
     return re.sub(r'\s+', ' ', t).strip()
 
 def season_num(t):
