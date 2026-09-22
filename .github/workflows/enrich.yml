@@ -12,6 +12,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: enrich
+  cancel-in-progress: false
+
 jobs:
   enrich:
     runs-on: ubuntu-latest
