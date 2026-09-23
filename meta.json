@@ -8057,7 +8057,13 @@
   },
   "70315": {
     "y": "2025",
-    "s": "completed"
+    "s": "completed",
+    "g": [
+      "Drama",
+      "Horror",
+      "Mystery",
+      "Psychological"
+    ]
   },
   "70317": {
     "y": "2013",
