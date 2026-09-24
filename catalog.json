@@ -1,71 +1,7 @@
 [
   {
-    "id": 75455,
-    "latestUpdate": 1790206561000,
-    "title": "Otome Game Sekai wa Mob ni Kibishii Sekai desu 2",
-    "poster": "https://cdn.myanimelist.net/images/anime/1285/158337.jpg",
-    "genres": [
-      "Action",
-      "Fantasy",
-      "Mecha",
-      "Romance"
-    ],
-    "year": "2026",
-    "episodes": [
-      {
-        "ep": "1",
-        "url": "https://r2.umum.work/MobSeka S2/MobSeka S2 - 01 [720p].mp4"
-      },
-      {
-        "ep": "2",
-        "url": "https://r2.umum.work/MobSeka S2/MobSeka S2 - 02 [720p].mp4"
-      },
-      {
-        "ep": "3",
-        "url": "https://r2.umum.work/MobSeka S2/MobSekaa S2 - 03 [720p].mp4"
-      },
-      {
-        "ep": "4",
-        "url": "https://r2.umum.work/MobSeka S2/MobSekaa S2 - 04 [720p].mp4"
-      },
-      {
-        "ep": "5",
-        "url": "https://r2.umum.work/MobSeka S2/MobSekaa S2 - 05 [720p].mp4"
-      },
-      {
-        "ep": "6",
-        "url": "https://r2.umum.work/MobSeka S2/MobSekaa S2 - 06 [720p].mp4"
-      },
-      {
-        "ep": "7",
-        "url": "https://r2.umum.work/MobSeka S2/MobSekaa S2 - 07 [720p].mp4"
-      },
-      {
-        "ep": "8",
-        "url": "https://r2.umum.work/MobSeka S2/MobSekaa S2 - 08 [720p].mp4"
-      },
-      {
-        "ep": "9",
-        "url": "https://r2.umum.work/MobSeka S2/MobSekaa S2 - 09 [720p].mp4"
-      },
-      {
-        "ep": "10",
-        "url": "https://r2.umum.work/MobSeka S2/MobSeka S2 - 10 [720p].mp4"
-      },
-      {
-        "ep": "11",
-        "url": "https://r2.umum.work/MobSeka S2/MobSeka S2 - 11 [720p].mp4"
-      },
-      {
-        "ep": "12",
-        "url": "https://r2.umum.work/MobSeka S2/MobSeka S2 - 12 [720p].mp4"
-      }
-    ],
-    "synopsis": "Musim kedua dari Otome Game Sekai wa Mob ni Kibishii Sekai desu."
-  },
-  {
     "id": 75451,
-    "latestUpdate": 1790206271000,
+    "latestUpdate": 1790290707000,
     "title": "Katainaka no Ossan, Kensei ni Naru II",
     "poster": "https://cdn.myanimelist.net/images/anime/1100/157173.jpg",
     "genres": [
@@ -126,6 +62,70 @@
       }
     ],
     "synopsis": "Musim kedua dari Katainaka no Ossan, Kensei ni Naru."
+  },
+  {
+    "id": 75455,
+    "latestUpdate": 1790290692000,
+    "title": "Otome Game Sekai wa Mob ni Kibishii Sekai desu 2",
+    "poster": "https://cdn.myanimelist.net/images/anime/1285/158337.jpg",
+    "genres": [
+      "Action",
+      "Fantasy",
+      "Mecha",
+      "Romance"
+    ],
+    "year": "2026",
+    "episodes": [
+      {
+        "ep": "1",
+        "url": "https://r2.umum.work/MobSeka S2/MobSeka S2 - 01 [720p].mp4"
+      },
+      {
+        "ep": "2",
+        "url": "https://r2.umum.work/MobSeka S2/MobSeka S2 - 02 [720p].mp4"
+      },
+      {
+        "ep": "3",
+        "url": "https://r2.umum.work/MobSeka S2/MobSekaa S2 - 03 [720p].mp4"
+      },
+      {
+        "ep": "4",
+        "url": "https://r2.umum.work/MobSeka S2/MobSekaa S2 - 04 [720p].mp4"
+      },
+      {
+        "ep": "5",
+        "url": "https://r2.umum.work/MobSeka S2/MobSekaa S2 - 05 [720p].mp4"
+      },
+      {
+        "ep": "6",
+        "url": "https://r2.umum.work/MobSeka S2/MobSekaa S2 - 06 [720p].mp4"
+      },
+      {
+        "ep": "7",
+        "url": "https://r2.umum.work/MobSeka S2/MobSekaa S2 - 07 [720p].mp4"
+      },
+      {
+        "ep": "8",
+        "url": "https://r2.umum.work/MobSeka S2/MobSekaa S2 - 08 [720p].mp4"
+      },
+      {
+        "ep": "9",
+        "url": "https://r2.umum.work/MobSeka S2/MobSekaa S2 - 09 [720p].mp4"
+      },
+      {
+        "ep": "10",
+        "url": "https://r2.umum.work/MobSeka S2/MobSeka S2 - 10 [720p].mp4"
+      },
+      {
+        "ep": "11",
+        "url": "https://r2.umum.work/MobSeka S2/MobSeka S2 - 11 [720p].mp4"
+      },
+      {
+        "ep": "12",
+        "url": "https://r2.umum.work/MobSeka S2/MobSeka S2 - 12 [720p].mp4"
+      }
+    ],
+    "synopsis": "Musim kedua dari Otome Game Sekai wa Mob ni Kibishii Sekai desu."
   },
   {
     "id": 75446,
