@@ -14610,6 +14610,16 @@
     ],
     "s": "ongoing"
   },
+  "75900": {
+    "y": "2026",
+    "g": [
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Fantasy"
+    ],
+    "s": "ongoing"
+  },
   "75931": {
     "y": "2026",
     "g": [
@@ -14625,6 +14635,14 @@
       "Drama",
       "Romance",
       "Slice of Life"
+    ],
+    "s": "ongoing"
+  },
+  "75948": {
+    "y": "2026",
+    "g": [
+      "Fantasy",
+      "Romance"
     ],
     "s": "ongoing"
   }
