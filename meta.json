@@ -14680,5 +14680,34 @@
       "Fantasy"
     ],
     "s": "ongoing"
+  },
+  "75991": {
+    "y": "2026",
+    "g": [
+      "Comedy",
+      "Fantasy",
+      "Romance"
+    ],
+    "s": "ongoing"
+  },
+  "75992": {
+    "y": "2026",
+    "g": [
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Fantasy"
+    ],
+    "s": "ongoing"
+  },
+  "76000": {
+    "y": "2026",
+    "g": [
+      "Action",
+      "Comedy",
+      "Horror",
+      "Mystery"
+    ],
+    "s": "ongoing"
   }
 }
