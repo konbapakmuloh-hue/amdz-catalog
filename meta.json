@@ -14709,5 +14709,39 @@
       "Mystery"
     ],
     "s": "ongoing"
+  },
+  "76006": {
+    "y": "2026",
+    "g": [
+      "Action",
+      "Mecha"
+    ],
+    "s": "ongoing"
+  },
+  "76011": {
+    "g": [
+      "Action",
+      "Comedy",
+      "Romance"
+    ],
+    "s": "ongoing"
+  },
+  "76015": {
+    "y": "2026",
+    "g": [
+      "Comedy",
+      "Ecchi",
+      "Slice of Life"
+    ],
+    "s": "ongoing"
+  },
+  "76019": {
+    "y": "2026",
+    "g": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "s": "ongoing"
   }
 }
