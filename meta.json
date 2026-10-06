@@ -14814,5 +14814,41 @@
       "Thriller"
     ],
     "s": "ongoing"
+  },
+  "76085": {
+    "y": "2016",
+    "g": [
+      "Action",
+      "Fantasy",
+      "Horror",
+      "Mahou Shoujo"
+    ],
+    "s": "completed"
+  },
+  "76094": {
+    "y": "2026",
+    "g": [
+      "Comedy",
+      "Romance"
+    ],
+    "s": "ongoing"
+  },
+  "76102": {
+    "y": "2026",
+    "g": [
+      "Comedy",
+      "Slice of Life"
+    ],
+    "s": "ongoing"
+  },
+  "76106": {
+    "y": "2026",
+    "g": [
+      "Adventure",
+      "Comedy",
+      "Fantasy",
+      "Slice of Life"
+    ],
+    "s": "ongoing"
   }
 }
