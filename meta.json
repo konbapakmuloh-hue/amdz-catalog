@@ -14905,5 +14905,37 @@
       "Fantasy"
     ],
     "s": "ongoing"
+  },
+  "76152": {
+    "y": "2026",
+    "g": [
+      "Slice of Life"
+    ],
+    "s": "ongoing"
+  },
+  "76161": {
+    "y": "2026",
+    "g": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "s": "ongoing"
+  },
+  "76168": {
+    "y": "2026",
+    "g": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "s": "ongoing"
+  },
+  "76172": {
+    "y": "2026",
+    "g": [
+      "Drama",
+      "Romance"
+    ],
+    "s": "ongoing"
   }
 }
