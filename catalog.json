@@ -1,5 +1,28 @@
 [
   {
+    "id": 75948,
+    "latestUpdate": 1791536238000,
+    "title": "Kizu darake Seijo yori Houfuku wo Komete Season 2",
+    "poster": "https://cdn.myanimelist.net/images/anime/1782/158664.jpg",
+    "genres": [
+      "Fantasy",
+      "Romance"
+    ],
+    "year": "2026",
+    "episodes": [
+      {
+        "ep": "1",
+        "url": "https://r2.umum.work/Kizu darake S2/Kizu darake S2 - 01 [720p].mp4"
+      },
+      {
+        "ep": "2",
+        "url": "https://r2.umum.work/Kizu darake S2/Kizu darake S2 - 02 [720p].mp4"
+      }
+    ],
+    "synopsis": "Musim kedua Kizu darake Seijo yori Houfuku wo Komete .",
+    "_status": "ongoing"
+  },
+  {
     "id": 75939,
     "latestUpdate": 1791503328000,
     "title": "Koori no Jouheki Season 2",
@@ -1701,25 +1724,6 @@
       }
     ],
     "synopsis": "Sekuel Tokyo Revengers: Tenjiku-hen ."
-  },
-  {
-    "id": 75948,
-    "latestUpdate": 1790940315000,
-    "title": "Kizu darake Seijo yori Houfuku wo Komete Season 2",
-    "poster": "https://cdn.myanimelist.net/images/anime/1782/158664.jpg",
-    "genres": [
-      "Fantasy",
-      "Romance"
-    ],
-    "year": "2026",
-    "episodes": [
-      {
-        "ep": "1",
-        "url": "https://r2.umum.work/Kizu darake S2/Kizu darake S2 - 01 [720p].mp4"
-      }
-    ],
-    "synopsis": "Musim kedua Kizu darake Seijo yori Houfuku wo Komete .",
-    "_status": "ongoing"
   },
   {
     "id": 74222,
