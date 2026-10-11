@@ -14937,5 +14937,55 @@
       "Romance"
     ],
     "s": "ongoing"
+  },
+  "76188": {
+    "y": "2026",
+    "g": [
+      "Horror",
+      "Mystery",
+      "Supernatural"
+    ],
+    "s": "ongoing"
+  },
+  "76195": {
+    "y": "2026",
+    "g": [
+      "Action",
+      "Comedy",
+      "Romance"
+    ],
+    "s": "ongoing"
+  },
+  "76201": {
+    "y": "2026",
+    "g": [
+      "Sports"
+    ],
+    "s": "ongoing"
+  },
+  "76207": {
+    "y": "2026",
+    "g": [
+      "Action",
+      "Drama",
+      "Supernatural"
+    ],
+    "s": "ongoing"
+  },
+  "76211": {
+    "y": "2026",
+    "g": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "s": "ongoing"
+  },
+  "76215": {
+    "y": "2026",
+    "g": [
+      "Adventure",
+      "Fantasy"
+    ],
+    "s": "ongoing"
   }
 }
