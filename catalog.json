@@ -1,5 +1,34 @@
 [
   {
+    "id": 75939,
+    "latestUpdate": 1792105887000,
+    "title": "Koori no Jouheki Season 2",
+    "poster": "https://cdn.myanimelist.net/images/anime/1963/159754.jpg",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance",
+      "Slice of Life"
+    ],
+    "year": "2026",
+    "episodes": [
+      {
+        "ep": "1",
+        "url": "https://r2.umum.work/KoorinoJouheki S2/KoorinoJouheki S2 - 01 [720p].mp4"
+      },
+      {
+        "ep": "2",
+        "url": "https://r2.umum.work/KoorinoJouheki S2/KoorinoJouheki S2 - 02 [720p].mp4"
+      },
+      {
+        "ep": "3",
+        "url": "https://r2.umum.work/KoorinoJouheki S2/KoorinoJouheki S2 - 03 [720p].mp4"
+      }
+    ],
+    "synopsis": "Musim kedua Koori no Jouheki .",
+    "_status": "ongoing"
+  },
+  {
     "id": 75931,
     "latestUpdate": 1792103617000,
     "title": "FX Senshi Kurumi-chan",
@@ -1674,31 +1703,6 @@
       }
     ],
     "synopsis": "Musim kedua Kizu darake Seijo yori Houfuku wo Komete .",
-    "_status": "ongoing"
-  },
-  {
-    "id": 75939,
-    "latestUpdate": 1791503328000,
-    "title": "Koori no Jouheki Season 2",
-    "poster": "https://cdn.myanimelist.net/images/anime/1963/159754.jpg",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Romance",
-      "Slice of Life"
-    ],
-    "year": "2026",
-    "episodes": [
-      {
-        "ep": "1",
-        "url": "https://r2.umum.work/KoorinoJouheki S2/KoorinoJouheki S2 - 01 [720p].mp4"
-      },
-      {
-        "ep": "2",
-        "url": "https://r2.umum.work/KoorinoJouheki S2/KoorinoJouheki S2 - 02 [720p].mp4"
-      }
-    ],
-    "synopsis": "Musim kedua Koori no Jouheki .",
     "_status": "ongoing"
   },
   {
