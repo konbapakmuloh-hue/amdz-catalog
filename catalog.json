@@ -1,5 +1,114 @@
 [
   {
+    "id": 76102,
+    "latestUpdate": 1792536923000,
+    "title": "Choujun! Choujou-senpai",
+    "poster": "https://cdn.myanimelist.net/images/anime/1874/160335.jpg",
+    "genres": [
+      "Comedy",
+      "Slice of Life"
+    ],
+    "year": "2026",
+    "episodes": [
+      {
+        "ep": "1",
+        "url": "https://r2.umum.work/PSYCHOJO/PSYCHOJO - 01 [720p].mp4"
+      },
+      {
+        "ep": "2",
+        "url": "https://r2.umum.work/PSYCHOJO/PSYCHOJOO - 02 [720p].mp4"
+      },
+      {
+        "ep": "3",
+        "url": "https://r2.umum.work/PSYCHOJO/PSYCHOJO - 03 [720p].mp4"
+      }
+    ],
+    "synopsis": "Di Chinjuku, kota yang tak pernah tidur, terdapat seorang perwira polisi senior dengan kemampuan supranatural yang melampaui pemahaman manusia! Namanya Meguru Choujou! Bersama dengan rekannya yang ahli judo, Nao Ippongi, duo kocak ini akan menjaga kebersihan jalanan dengan segala cara!",
+    "_status": "ongoing"
+  },
+  {
+    "id": 76284,
+    "latestUpdate": 1792536626000,
+    "title": "Cyberpunk: Edgerunners 2",
+    "poster": "https://cdn.myanimelist.net/images/anime/1431/160542.jpg",
+    "genres": [
+      "Action",
+      "Drama",
+      "Sci-Fi"
+    ],
+    "year": "2026",
+    "episodes": [
+      {
+        "ep": "1",
+        "url": "https://r2.umum.work/Cyberpunk Edgerunners 2/Cyberpunk Edgerunners 2 - 01 [720p].mp4"
+      },
+      {
+        "ep": "2",
+        "url": "https://r2.umum.work/Cyberpunk Edgerunners 2/Cyberpunk Edgerunners 2 - 02 [720p].mp4"
+      },
+      {
+        "ep": "3",
+        "url": "https://r2.umum.work/Cyberpunk Edgerunners 2/Cyberpunk Edgerunners 2 - 03 [720p].mp4"
+      },
+      {
+        "ep": "4",
+        "url": "https://r2.umum.work/Cyberpunk Edgerunners 2/Cyberpunk Edgerunners 2 - 04 [720p].mp4"
+      },
+      {
+        "ep": "5",
+        "url": "https://r2.umum.work/Cyberpunk Edgerunners 2/Cyberpunk Edgerunners 2 - 05 [720p].mp4"
+      },
+      {
+        "ep": "6",
+        "url": "https://r2.umum.work/Cyberpunk Edgerunners 2/Cyberpunk Edgerunners 2 - 06 [720p].mp4"
+      },
+      {
+        "ep": "7",
+        "url": "https://r2.umum.work/Cyberpunk Edgerunners 2/Cyberpunk Edgerunners 2 - 07 [720p].mp4"
+      },
+      {
+        "ep": "8",
+        "url": "https://r2.umum.work/Cyberpunk Edgerunners 2/Cyberpunk Edgerunners 2 - 08 [720p].mp4"
+      },
+      {
+        "ep": "9",
+        "url": "https://r2.umum.work/Cyberpunk Edgerunners 2/Cyberpunk Edgerunners 2 - 09 [720p].mp4"
+      },
+      {
+        "ep": "10",
+        "url": "https://r2.umum.work/Cyberpunk Edgerunners 2/Cyberpunk Edgerunners 2 - 10 [720p].mp4"
+      }
+    ],
+    "synopsis": "Sekuel dari Cyberpunk: Edgerunners .",
+    "_status": "completed"
+  },
+  {
+    "id": 76090,
+    "latestUpdate": 1792533783000,
+    "title": "Kyouran Reijou Nia Liston: Byoujaku Reijou ni Tensei shita Kamigoroshi no Bujin no Karei Naru Musouroku",
+    "poster": "https://cdn.myanimelist.net/images/anime/1000/159223.jpg",
+    "genres": [
+      "Anime",
+      "Sub Indo"
+    ],
+    "year": "",
+    "episodes": [
+      {
+        "ep": "1",
+        "url": "https://r2.umum.work/NLISTON/NLISTON - 01 [720p].mp4"
+      },
+      {
+        "ep": "2",
+        "url": "https://r2.umum.work/NLISTON/NLISTON - 02 [720p].mp4"
+      },
+      {
+        "ep": "3",
+        "url": "https://r2.umum.work/NLISTON/NLISTON - 03 [720p].mp4"
+      }
+    ],
+    "synopsis": "Terbaring di ranjang kematiannya tanpa harapan untuk sembuh, Nia Liston muda akan segera menyerah pada penyakitnya. Tak mampu menyerah, orang tuanya mati-matian mencari obat di tempat-tempat terpencil sekalipun, yang mengarah pada munculnya seorang pria bertudung yang mengaku dapat membantu menyembuhkan Nia. Namun, alih-alih menyembuhkannya, pria bertudung itu mentransplantasikan jiwa seorang pahlawan yang telah meninggal dan tak terkalahkan dalam pertempuran ke dalam tubuh gadis yang lemah itu.\nDiberi kesempatan kedua untuk hidup sebagai Nia, sang pahlawan bertekad untuk memulihkan kekuatan tubuh barunya dengan menggunakan teknik yang dikenal sebagai chi untuk menargetkan dan menghilangkan penyakit tersebut dari akarnya. Dengan semangat bertarungnya yang juga terbawa, Nia ingin kembali menjelajahi dunia. Namun, jiwa sang pahlawan yang gelisah mendambakan lawan yang sepadan yang dapat mengalahkannya di medan perang, memicu kekacauan di mana pun Nia berada."
+  },
+  {
     "id": 76080,
     "latestUpdate": 1792494455000,
     "title": "Mahou Shoujo Ikusei Keikaku: Restart",
@@ -1887,29 +1996,6 @@
     "synopsis": "Yuri, seorang gadis Jepang yang cantik, merasa sangat gembira setelah lulus ujian masuk perguruan tinggi dan mencium pacarnya—yang dulunya adalah teman masa kecilnya—untuk pertama kalinya. Namun, keberuntungannya tak lama kemudian berubah. Ia mulai menyadari bahwa air menjadi bergolak setiap kali ia mendekatinya. Suatu malam, sepasang tangan muncul dari genangan air di jalan dan menyeretnya ke dalam air! Dibawa ke sebuah desa kuno di Timur Tengah, ia kemudian ditangkap oleh pasukan bersenjata dan dibawa ke istana Ratu untuk dijadikan korban persembahan manusia."
   },
   {
-    "id": 76102,
-    "latestUpdate": 1791934195000,
-    "title": "Choujun! Choujou-senpai",
-    "poster": "https://cdn.myanimelist.net/images/anime/1874/160335.jpg",
-    "genres": [
-      "Comedy",
-      "Slice of Life"
-    ],
-    "year": "2026",
-    "episodes": [
-      {
-        "ep": "1",
-        "url": "https://r2.umum.work/PSYCHOJO/PSYCHOJO - 01 [720p].mp4"
-      },
-      {
-        "ep": "2",
-        "url": "https://r2.umum.work/PSYCHOJO/PSYCHOJOO - 02 [720p].mp4"
-      }
-    ],
-    "synopsis": "Di Chinjuku, kota yang tak pernah tidur, terdapat seorang perwira polisi senior dengan kemampuan supranatural yang melampaui pemahaman manusia! Namanya Meguru Choujou! Bersama dengan rekannya yang ahli judo, Nao Ippongi, duo kocak ini akan menjaga kebersihan jalanan dengan segala cara!",
-    "_status": "ongoing"
-  },
-  {
     "id": 76098,
     "latestUpdate": 1791934070000,
     "title": "Battle Spirits [Re]: Zekkai no Kuu",
@@ -1956,28 +2042,6 @@
     ],
     "synopsis": "Rein, seorang penyihir yang memperkuat peralatan dengan sihirnya, tiba-tiba diusir dari guildnya, hanya karena setiap perlengkapan di guild tersebut sudah cukup ditingkatkan. Marah dengan perlakuan yang tidak masuk akal itu, Rein memutuskan untuk mengambil kembali sejumlah besar mana yang telah ia curahkan ke peralatan mereka. Ketika ia dengan santai menyalurkannya ke pedang tembaga acak, pedang itu berubah menjadi senjata tingkat curang dengan 10.000 poin peningkatan!\nDengan nol pengalaman tempur tetapi dipersenjatai dengan sihir yang dapat mengubah apa pun menjadi perlengkapan yang sangat kuat, penyihir ini berangkat untuk menikmati kehidupan baru yang bebas dan tanpa beban sebagai seorang petualang!",
     "_status": "ongoing"
-  },
-  {
-    "id": 76090,
-    "latestUpdate": 1791923527000,
-    "title": "Kyouran Reijou Nia Liston: Byoujaku Reijou ni Tensei shita Kamigoroshi no Bujin no Karei Naru Musouroku",
-    "poster": "https://cdn.myanimelist.net/images/anime/1000/159223.jpg",
-    "genres": [
-      "Anime",
-      "Sub Indo"
-    ],
-    "year": "",
-    "episodes": [
-      {
-        "ep": "1",
-        "url": "https://r2.umum.work/NLISTON/NLISTON - 01 [720p].mp4"
-      },
-      {
-        "ep": "2",
-        "url": "https://r2.umum.work/NLISTON/NLISTON - 02 [720p].mp4"
-      }
-    ],
-    "synopsis": "Terbaring di ranjang kematiannya tanpa harapan untuk sembuh, Nia Liston muda akan segera menyerah pada penyakitnya. Tak mampu menyerah, orang tuanya mati-matian mencari obat di tempat-tempat terpencil sekalipun, yang mengarah pada munculnya seorang pria bertudung yang mengaku dapat membantu menyembuhkan Nia. Namun, alih-alih menyembuhkannya, pria bertudung itu mentransplantasikan jiwa seorang pahlawan yang telah meninggal dan tak terkalahkan dalam pertempuran ke dalam tubuh gadis yang lemah itu.\nDiberi kesempatan kedua untuk hidup sebagai Nia, sang pahlawan bertekad untuk memulihkan kekuatan tubuh barunya dengan menggunakan teknik yang dikenal sebagai chi untuk menargetkan dan menghilangkan penyakit tersebut dari akarnya. Dengan semangat bertarungnya yang juga terbawa, Nia ingin kembali menjelajahi dunia. Namun, jiwa sang pahlawan yang gelisah mendambakan lawan yang sepadan yang dapat mengalahkannya di medan perang, memicu kekacauan di mana pun Nia berada."
   },
   {
     "id": 75011,
