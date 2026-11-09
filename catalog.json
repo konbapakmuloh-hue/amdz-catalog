@@ -1,5 +1,120 @@
 [
   {
+    "id": 76048,
+    "latestUpdate": 1794217253000,
+    "title": "Kanata kara",
+    "poster": "https://cdn.myanimelist.net/images/anime/1238/159816.jpg",
+    "genres": [
+      "Adventure",
+      "Fantasy",
+      "Romance"
+    ],
+    "year": "2026",
+    "episodes": [
+      {
+        "ep": "1",
+        "url": "https://r2.umum.work/KANATAKR/KANATAKRR - 01 [720p].mp4"
+      },
+      {
+        "ep": "2",
+        "url": "https://r2.umum.work/KANATAKR/KANATAKRR - 02 [720p].mp4"
+      },
+      {
+        "ep": "3",
+        "url": "https://r2.umum.work/KANATAKR/KANATAKRR - 03 [720p].mp4"
+      },
+      {
+        "ep": "4",
+        "url": "https://r2.umum.work/KANATAKR/KANATAKRR - 04 [720p].mp4"
+      },
+      {
+        "ep": "5",
+        "url": "https://r2.umum.work/KANATAKR/KANATAKRR - 05 [720p].mp4"
+      },
+      {
+        "ep": "6",
+        "url": "https://r2.umum.work/KANATAKR/KANATAKRR - 06 [720p].mp4"
+      }
+    ],
+    "synopsis": "Noriko Tachiki telah lama memimpikan negeri fantasi yang indah, meskipun teman-temannya mengira itu hanya imajinasinya. Suatu hari, dalam perjalanan pulang, Noriko menemukan sebuah bom yang disamarkan sebagai kantong kertas yang meledak tepat di depannya. Namun, alih-alih mati, ia dipindahkan ke hutan misterius yang penuh dengan tumbuhan dan makhluk aneh.\nSaat ia mulai menjelajahi hutan, Noriko tiba-tiba diserang oleh monster raksasa berbentuk cacing. Untungnya, ia diselamatkan oleh Izark Kia Tarj, seorang pendekar pedang yang tidak mengerti bahasanya. Karena tidak memiliki kekuatan untuk bertahan hidup sendiri, Noriko memutuskan untuk mengikuti penyelamatnya yang tabah, mengambil kesempatan untuk mempelajari bahasa negeri asing itu dan menjadi lebih berguna bagi Izark.\nTanpa disadarinya, Noriko adalah bagian penting dari ramalan kuno. Dia adalah “Sang Kebangkitan”—makhluk yang ditakdirkan untuk melepaskan kejahatan terbesar yang dikenal sebagai “Setan Langit.” Dengan orang-orang berpengaruh yang bersekongkol untuk menangkap Noriko karena kekuatan yang konon dimilikinya, baik dia maupun Izark harus berjuang sendiri dan mengatasi masa depan yang penuh kekacauan.",
+    "_status": "ongoing"
+  },
+  {
+    "id": 76042,
+    "latestUpdate": 1794217120000,
+    "title": "Hotel Inhumans Season 2",
+    "poster": "https://cdn.myanimelist.net/images/anime/1903/159928.jpg",
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "year": "2026",
+    "episodes": [
+      {
+        "ep": "1",
+        "url": "https://r2.umum.work/HotelInhumans S2/HotelInhumans S2 - 01 [720p].mp4"
+      },
+      {
+        "ep": "2",
+        "url": "https://r2.umum.work/HotelInhumans S2/HotelInhumans S2 - 02 [720p].mp4"
+      },
+      {
+        "ep": "3",
+        "url": "https://r2.umum.work/HotelInhumans S2/HotelInhumans S2 - 03 [720p].mp4"
+      },
+      {
+        "ep": "4",
+        "url": "https://r2.umum.work/HotelInhumans S2/HotelInhumans S2 - 04 [720p].mp4"
+      },
+      {
+        "ep": "5",
+        "url": "https://r2.umum.work/HotelInhumans S2/HotelInhumans S2 - 05 [720p].mp4"
+      },
+      {
+        "ep": "6",
+        "url": "https://r2.umum.work/HotelInhumans S2/HotelInhumans S2 - 06 [720p].mp4"
+      }
+    ],
+    "synopsis": "Musim kedua dari Hotel Inhumans .",
+    "_status": "ongoing"
+  },
+  {
+    "id": 76222,
+    "latestUpdate": 1794216960000,
+    "title": "Dragon Ball Super: Beerus",
+    "poster": "https://cdn.myanimelist.net/images/anime/1624/159991.jpg",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "year": "2026",
+    "episodes": [
+      {
+        "ep": "1",
+        "url": "https://r2.umum.work/DRGBALL26/DRGBALL26 - 01 [720p].mp4"
+      },
+      {
+        "ep": "2",
+        "url": "https://r2.umum.work/DRGBALL26/DRGBALL26 - 02 [720p].mp4"
+      },
+      {
+        "ep": "3",
+        "url": "https://r2.umum.work/DRGBALL26/DRGBALL26 - 03 [720p].mp4"
+      },
+      {
+        "ep": "4",
+        "url": "https://r2.umum.work/DRGBALL26/DRGBALL26 - 04 [720p].mp4"
+      },
+      {
+        "ep": "5",
+        "url": "https://r2.umum.work/DRGBALL26/DRGBALL26 - 05 [720p].mp4"
+      }
+    ],
+    "synopsis": "Dragon Ball Super: Beerus , sebuah proyek yang dimulai beberapa tahun lalu, adalah edisi anime Dragon Ball Super yang baru saja DITINGKATKAN . Ditingkatkan dengan ekspresi visual terbaru, setiap adegan, terutama adegan pertempuran, menjadi lebih imersif, memberikan reproduksi yang lebih setia dan detail dari karya asli Akira Toriyama, dan akan memberikan kualitas yang pasti akan memuaskan penonton sepenuhnya.",
+    "_status": "ongoing"
+  },
+  {
     "id": 76211,
     "latestUpdate": 1794178337000,
     "title": "Tank Chair",
@@ -2701,109 +2816,6 @@
       }
     ],
     "synopsis": "Jauh di dalam hutan, sebuah pondok yang nyaman dan agak berantakan terletak di tepi danau, tempat tinggal seorang penyihir misterius dan ditakuti. Sebenarnya, dia adalah seorang wanita muda yang cantik bernama Rose, yang telah mempelajari seni pembuatan ramuan dari neneknya yang bijaksana. Rose menghargai kehidupan terpencilnya, namun ada kerinduan di hatinya—untuk seorang ksatria tampan yang pernah dilihatnya, Sir Harij Azm.\nSelama empat tahun, perasaan Rose terhadap Harij telah membayangi, tetapi dia tidak pernah bisa mewujudkannya; para penyihir hidup di luar urusan manusia dan tidak terikat pada negara atau pria mana pun. Jadi, ketika Harij tiba-tiba muncul di depan pintunya mencari ramuan cinta, Rose terkejut sekaligus patah hati. Meskipun wanita lain telah merebut hati ksatria mulia itu, Rose memutuskan untuk membantunya. Tetapi sebelum membuat ramuan itu, Rose mengirim Harij dalam serangkaian misi konyol untuk setiap bahan, berharap untuk menunda hal yang tak terhindarkan dan menikmati waktu singkat mereka bersama.",
-    "_status": "ongoing"
-  },
-  {
-    "id": 76048,
-    "latestUpdate": 1793623708000,
-    "title": "Kanata kara",
-    "poster": "https://cdn.myanimelist.net/images/anime/1238/159816.jpg",
-    "genres": [
-      "Adventure",
-      "Fantasy",
-      "Romance"
-    ],
-    "year": "2026",
-    "episodes": [
-      {
-        "ep": "1",
-        "url": "https://r2.umum.work/KANATAKR/KANATAKRR - 01 [720p].mp4"
-      },
-      {
-        "ep": "2",
-        "url": "https://r2.umum.work/KANATAKR/KANATAKRR - 02 [720p].mp4"
-      },
-      {
-        "ep": "3",
-        "url": "https://r2.umum.work/KANATAKR/KANATAKRR - 03 [720p].mp4"
-      },
-      {
-        "ep": "4",
-        "url": "https://r2.umum.work/KANATAKR/KANATAKRR - 04 [720p].mp4"
-      },
-      {
-        "ep": "5",
-        "url": "https://r2.umum.work/KANATAKR/KANATAKRR - 05 [720p].mp4"
-      }
-    ],
-    "synopsis": "Noriko Tachiki telah lama memimpikan negeri fantasi yang indah, meskipun teman-temannya mengira itu hanya imajinasinya. Suatu hari, dalam perjalanan pulang, Noriko menemukan sebuah bom yang disamarkan sebagai kantong kertas yang meledak tepat di depannya. Namun, alih-alih mati, ia dipindahkan ke hutan misterius yang penuh dengan tumbuhan dan makhluk aneh.\nSaat ia mulai menjelajahi hutan, Noriko tiba-tiba diserang oleh monster raksasa berbentuk cacing. Untungnya, ia diselamatkan oleh Izark Kia Tarj, seorang pendekar pedang yang tidak mengerti bahasanya. Karena tidak memiliki kekuatan untuk bertahan hidup sendiri, Noriko memutuskan untuk mengikuti penyelamatnya yang tabah, mengambil kesempatan untuk mempelajari bahasa negeri asing itu dan menjadi lebih berguna bagi Izark.\nTanpa disadarinya, Noriko adalah bagian penting dari ramalan kuno. Dia adalah “Sang Kebangkitan”—makhluk yang ditakdirkan untuk melepaskan kejahatan terbesar yang dikenal sebagai “Setan Langit.” Dengan orang-orang berpengaruh yang bersekongkol untuk menangkap Noriko karena kekuatan yang konon dimilikinya, baik dia maupun Izark harus berjuang sendiri dan mengatasi masa depan yang penuh kekacauan.",
-    "_status": "ongoing"
-  },
-  {
-    "id": 76042,
-    "latestUpdate": 1793577555000,
-    "title": "Hotel Inhumans Season 2",
-    "poster": "https://cdn.myanimelist.net/images/anime/1903/159928.jpg",
-    "genres": [
-      "Action",
-      "Drama"
-    ],
-    "year": "2026",
-    "episodes": [
-      {
-        "ep": "1",
-        "url": "https://r2.umum.work/HotelInhumans S2/HotelInhumans S2 - 01 [720p].mp4"
-      },
-      {
-        "ep": "2",
-        "url": "https://r2.umum.work/HotelInhumans S2/HotelInhumans S2 - 02 [720p].mp4"
-      },
-      {
-        "ep": "3",
-        "url": "https://r2.umum.work/HotelInhumans S2/HotelInhumans S2 - 03 [720p].mp4"
-      },
-      {
-        "ep": "4",
-        "url": "https://r2.umum.work/HotelInhumans S2/HotelInhumans S2 - 04 [720p].mp4"
-      },
-      {
-        "ep": "5",
-        "url": "https://r2.umum.work/HotelInhumans S2/HotelInhumans S2 - 05 [720p].mp4"
-      }
-    ],
-    "synopsis": "Musim kedua dari Hotel Inhumans .",
-    "_status": "ongoing"
-  },
-  {
-    "id": 76222,
-    "latestUpdate": 1793575392000,
-    "title": "Dragon Ball Super: Beerus",
-    "poster": "https://cdn.myanimelist.net/images/anime/1624/159991.jpg",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Sci-Fi"
-    ],
-    "year": "2026",
-    "episodes": [
-      {
-        "ep": "1",
-        "url": "https://r2.umum.work/DRGBALL26/DRGBALL26 - 01 [720p].mp4"
-      },
-      {
-        "ep": "2",
-        "url": "https://r2.umum.work/DRGBALL26/DRGBALL26 - 02 [720p].mp4"
-      },
-      {
-        "ep": "3",
-        "url": "https://r2.umum.work/DRGBALL26/DRGBALL26 - 03 [720p].mp4"
-      },
-      {
-        "ep": "4",
-        "url": "https://r2.umum.work/DRGBALL26/DRGBALL26 - 04 [720p].mp4"
-      }
-    ],
-    "synopsis": "Dragon Ball Super: Beerus , sebuah proyek yang dimulai beberapa tahun lalu, adalah edisi anime Dragon Ball Super yang baru saja DITINGKATKAN . Ditingkatkan dengan ekspresi visual terbaru, setiap adegan, terutama adegan pertempuran, menjadi lebih imersif, memberikan reproduksi yang lebih setia dan detail dari karya asli Akira Toriyama, dan akan memberikan kualitas yang pasti akan memuaskan penonton sepenuhnya.",
     "_status": "ongoing"
   },
   {
